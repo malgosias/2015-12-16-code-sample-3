@@ -1,7 +1,7 @@
 ## About
 
 Create XSPEC/Sherpa style table model based on a grid of precomputed
-spectra read from the <specfile> input file.
+spectra read from an input file.
 
 ```
 $ import tabmod
@@ -10,15 +10,15 @@ $ tabmod.table_model(modelname, userparfile, specfile, outfile, clobber)
 
 ## Parameters
 
-* modelname - name of the user table model
+* ```modelname``` - name of the user table model.
 
-* specfile - file containing grid of pre-computed models in ph/cm2/s.
+* ```specfile``` - file containing grid of precomputed models in ph/cm2/s.
 
-Format of the <specfile>: 1st column is energy grid; consecutive columns contain grid models
+Format of the ```specfile```: 1st column is energy grid; consecutive columns contain grid models.
 
-* userparfile - file containing user definitions of model parameters.
+* ```userparfile``` - file containing user definitions of model parameters.
 
-Format of the <userparfile> (the order may be random, but must containt these 11 entries):
+Format of the ```userparfile``` (the order may be random, but must containt these 11 entries):
 
 ```
 addmodel True
@@ -46,9 +46,9 @@ delta - initial step in model fitting
 numbvals - <no. of values for par1> <no. of values for par2> ...
 ```
 
-* outfile - name of the output FITS file with the table model
+* ```outfile``` - name of the output FITS file.
 
-* clobber - defaults to False, if True then <outfile> will be overwritten
+* ```clobber``` - defaults to False, if True then ```outfile``` will be overwritten.
 
 ## Use in Sherpa:
 
@@ -57,7 +57,7 @@ $ load_table_model('mytabmod', 'mymodel.fits')
 $ set_model(mymodel)
 ```
 
-where mymodel.fits is the <outfile> parameter of table_model.
+where ```mymodel.fits``` is the ```outfile``` parameter of ```tabmod.table_model```.
 
 ## Use in XSPEC:
 
