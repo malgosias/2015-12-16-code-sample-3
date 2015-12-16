@@ -1,0 +1,11 @@
+addmodel True
+name par1 par2
+method 0. 0.
+bottom 0.1 2.0
+minimum 0.1 2.0
+top 10.0 50.0
+maximum 10.0 50.0
+initial 5.0 25.0
+delta 0.02 0.5
+numbvals 5 10
+value 0.1 1.2 4.0 7.0 10.0 2.0 3.0 5.0 7.0 10.0 15.0 20.0 30.0 40.0 50.0
