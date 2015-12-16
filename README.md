@@ -38,13 +38,15 @@ with spaces> ...
 where
 
 ```
-addmodel - True for additive model, False for multiplicative model
-method - interpolation method: 0 for linear; 1 for logarithmic
-top/maximum/bottom/minimum - corresponding boundaries of the model parameters
-initial - initial fit values of the model parameters
-delta - initial step in model fitting
+addmodel - True for additive model, False for multiplicative model.
+method - interpolation method: 0 for linear; 1 for logarithmic.
+top/maximum/bottom/minimum - corresponding boundaries of the model parameters.
+initial - initial fit values of the model parameters.
+delta - initial step in model fitting.
 numbvals - <no. of values for par1> <no. of values for par2> ...
 ```
+
+See ```userparams_test.txt``` for example of ```userparfile``` formatting.
 
 * ```outfile``` - name of the output FITS file.
 
